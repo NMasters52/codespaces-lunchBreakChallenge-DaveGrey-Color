@@ -1,11 +1,16 @@
+import { useState } from "react";
 
 function App() {
+  const [userInput, setUserInput] = useState('Empty Value')
+
+  const handleUserInput = (e) => setUserInput(e.target.value) 
+
   return (
     <main>
       <div className="colorDisplay">
-        <p>Empty Value</p>
+        <p>{userInput}</p>
       </div>
-      <input value='Type Color Name' />
+      <input placeholder="Type Color Name" onChange={handleUserInput} />
     </main>
   );
 }
