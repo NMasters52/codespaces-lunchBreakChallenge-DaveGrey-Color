@@ -6,12 +6,12 @@ function App() {
   const handleUserInput = (e) => setUserInput(e.target.value) 
 
   const colorDisplayStyles = {
-    backgroundColor: userInput
+    backgroundColor: userInput,
   }
 
   return (
     <main>
-      <div className="colorDisplay" styles={colorDisplayStyles}>
+      <div className="colorDisplay" style={colorDisplayStyles}>
         <p>{userInput.length ? userInput : 'Empty Value'}</p>
       </div>
       <input placeholder="Type Color Name" onChange={handleUserInput} />
