@@ -1,1 +1,30 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
 
+.colorDisplay {
+    height: 12rem;
+    width: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 1rem;
+    box-shadow: 8px 3px;
+    margin-bottom: 1rem;
+    font-family: menlo;
+}
+
+.userInput{
+    width: 10rem;
+    height: 1.3rem;
+    font-family: menlo;
+    color: black;
+    font-weight: bold;
+    font-size: .7rem;
+    
+}

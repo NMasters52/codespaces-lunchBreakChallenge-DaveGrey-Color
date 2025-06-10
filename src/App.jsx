@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './App.css'
 
 function App() {
   const [userInput, setUserInput] = useState('')
@@ -10,11 +11,11 @@ function App() {
   }
 
   return (
-    <main>
+    <main className="container">
       <div className="colorDisplay" style={colorDisplayStyles}>
         <p>{userInput.length ? userInput : 'Empty Value'}</p>
       </div>
-      <input placeholder="Type Color Name" onChange={handleUserInput} />
+      <input autoFocus tabIndex={0} placeholder="Type Color Name" onChange={handleUserInput} className="userInput" />
     </main>
   );
 }
